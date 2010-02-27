@@ -1,0 +1,23 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2998
+
+BackgroundColor.vim only works, if your vim is compiled with signs-support.  If it is, you can use signs, to define a background color for your text.
+
+This plugin defines these Commands:
+:Red Color the selected Range red
+:White Color the selected Range white
+:Yellow Color the selected Range yellow
+:Blue Color the selected Range blue
+:Green Color the selected range Green
+:Black Color the selected range Black
+:Custom1
+:Custom2
+Color the selected range with your defined Color1 or 2
+Those 2 commands are only defined, if you have specified a color for this command.
+You can define a custom color using the 2 variables g:bg_color_custom1 and g:bg_color_custom2
+
+:Clear Clear the selected range
+:ClearAll Clear the whole buffer of all background colors.
+
+All commands (excep :ClearAll, which only uses the whole buffer) accept a range, on which they operate. So you can use, e.g. :%Red to color the whole buffer red.
+
+I am not sure if this is really useful, but in case you find it usefull, please rate this plugin.
